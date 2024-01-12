@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: rgba(139, 40, 217, 0.2);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="770.0" fitWidth="1372.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Asset/login2.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutX="402.0" layoutY="130.0" opacity="0.45" prefHeight="520.0" prefWidth="544.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+      <Pane layoutY="7.0" prefHeight="766.0" prefWidth="1368.0">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="150.0" layoutX="604.0" layoutY="147.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\Randika Edirisooriya\IdeaProjects\CABTECK\src\main\resources\Asset\user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userNameTextField" layoutX="518.0" layoutY="321.0" prefHeight="38.0" prefWidth="316.0" promptText="Enter your User name" style="-fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="520.0" layoutY="387.0" prefHeight="38.0" prefWidth="316.0" promptText="Enter your password" style="-fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="loginButton" layoutX="607.0" layoutY="474.0" onAction="#btnLoginOnAction" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: rgba(26, 2, 56, 1); -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css" text="Login" textFill="#08a6c263">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="loginMassage" layoutX="524.0" layoutY="425.0" prefHeight="19.0" prefWidth="316.0" textFill="#b90a0a">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginsuccessfulMassage" layoutX="596.0" layoutY="285.0">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4281767955801105" centerY="0.533175355450237" cycleMethod="REFLECT" focusDistance="0.09195402298850563" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0054824561811983585" green="0.014894005842506886" blue="0.1184210553765297" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.055921051651239395" green="0.2959429919719696" blue="0.7105262875556946" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="562.0" layoutY="553.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Don't have an account?">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="695.0" layoutY="539.0" onAction="#signUpOnAction" prefHeight="25.0" prefWidth="96.0" style="-fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css" text="Sign Up" textFill="#084e5b">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

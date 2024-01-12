@@ -1,0 +1,23 @@
+.transparent-table-view {
+    -fx-background-color: transparent;
+}
+
+.transparent-table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.transparent-table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.transparent-table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.transparent-table-view .table-cell {
+    -fx-background-color: transparent;
+}
+.transparent-table-view .bolt {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}

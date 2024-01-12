@@ -1,0 +1,22 @@
+/* Define the keyframes for the shining effect */
+@keyframes shining {
+    0% {
+        -fx-background-color: #ffd700; /* Initial color */
+        -fx-effect: dropshadow(gaussian, #ffd700, 0, 0, 0, 0);
+    }
+    50% {
+        -fx-background-color: #ffeb3b; /* Intermediate color */
+        -fx-effect: dropshadow(gaussian, #ffeb3b, 0, 0, 0, 0);
+    }
+    100% {
+        -fx-background-color: #ffd700; /* Final color */
+        -fx-effect: dropshadow(gaussian, #ffd700, 0, 0, 0, 0);
+    }
+}
+
+/* Apply the shining effect on button hover */
+.button:hover {
+    -fx-background-color: #ffd700; /* Set initial color on hover */
+    -fx-effect: dropshadow(gaussian, #ffd700, 0, 0, 0, 0);
+    -fx-animation: shining 1s infinite; /* Apply the shining animation */
+}

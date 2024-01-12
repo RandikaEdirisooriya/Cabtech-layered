@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="878.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.LoginForm1Controller">
+   <children>
+      <ImageView fitHeight="877.0" fitWidth="1550.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Asset/login2.gif" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="loginbtn" layoutX="753.0" layoutY="402.0" onAction="#loginbtnOnAction" text="login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="66.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

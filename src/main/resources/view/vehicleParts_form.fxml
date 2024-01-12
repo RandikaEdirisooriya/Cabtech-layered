@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashAnchor" prefHeight="768.0" prefWidth="1080.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.VehiclePartsFormController">
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="-10.0" prefHeight="778.0" prefWidth="1098.0" style="-fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="776.0" fitWidth="1260.0" layoutX="-158.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Asset/Rectangle%20168.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="24.0" layoutY="52.0" prefHeight="232.0" prefWidth="478.0" style="-fx-background-color: #b7cbd7e8; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Label layoutX="12.0" layoutY="3.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Spare Parts  Management">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="8.0" layoutY="58.0" prefHeight="72.0" prefWidth="459.0" style="-fx-background-color: white; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css">
+                     <children>
+                        <JFXTextField fx:id="Searchtxt" layoutX="29.0" layoutY="26.0" onAction="#SearchPart" prefHeight="31.0" prefWidth="367.0" promptText="Search Part Id..">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <ImageView fitHeight="47.0" fitWidth="36.0" layoutX="379.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Asset/search.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+                  <JFXButton fx:id="placeOrder" buttonType="RAISED" layoutX="58.0" layoutY="162.0" onAction="#placeOrderOnAction" prefHeight="53.0" prefWidth="326.0" style="-fx-background-color: #46e1abed; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css" text="Place Your Order" textFill="#0d6b75ed">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="16.0" layoutY="333.0" prefHeight="430.0" prefWidth="1054.0" style="-fx-background-color: #b7cbd7e8; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <TableView fx:id="tblparts" layoutX="6.0" layoutY="8.0" prefHeight="420.0" prefWidth="1042.0" stylesheets="@../styls/tableView.css">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="104.0" text="Id:" />
+                        <TableColumn fx:id="colName" prefWidth="133.0" text="Name " />
+                        <TableColumn fx:id="colPart" prefWidth="88.0" text="Price" />
+                        <TableColumn fx:id="colCode" prefWidth="101.0" text="Code" />
+                        <TableColumn fx:id="colQty" prefWidth="121.0" text="Qty" />
+                        <TableColumn fx:id="colColour" prefWidth="163.0" text="Colour" />
+                        <TableColumn fx:id="colDescription" prefWidth="158.0" text="Description" />
+                        <TableColumn fx:id="colAction" prefWidth="172.0" text="Action" />
+                    </columns>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="bolt" />
+                        <String fx:value="column-header" />
+                        <String fx:value="column-header-background" />
+                        <String fx:value="table-cell" />
+                     </styleClass>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="599.0" layoutY="50.0" prefHeight="232.0" prefWidth="453.0" style="-fx-background-color: #b7cbd7e8; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Label layoutX="182.0" layoutY="3.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Extra">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="8.0" layoutY="58.0" prefHeight="72.0" prefWidth="437.0" style="-fx-background-color: white; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css" />
+                  <Label layoutX="72.0" layoutY="73.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Items">
+                     <font>
+                        <Font name="Times New Roman Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#8f1414" layoutX="31.0" layoutY="89.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="lblItems" layoutX="392.0" layoutY="73.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="20" textFill="#0b24e8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="addNewParts" buttonType="RAISED" layoutX="66.0" layoutY="166.0" onAction="#addNewPartOnAction" prefHeight="53.0" prefWidth="326.0" style="-fx-background-color: #c41d1d7a; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../styls/styls.css" text="Add New Spare Parts" textFill="#6f1010">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1080.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.EmployeeFormController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="770.0" prefWidth="1086.0" />
+      <ImageView fitHeight="770.0" fitWidth="1264.0" layoutX="-168.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Asset/Rectangle%20168.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="53.0" layoutY="39.0" prefHeight="262.0" prefWidth="1035.0" style="-fx-background-color: #b7cbd7e8; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+         <children>
+            <Label layoutX="14.0" layoutY="-4.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Employee Management">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Manage  all your Employees or add new Employees" textFill="#575757">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Label>
+            <HBox layoutX="14.0" layoutY="76.0" prefHeight="175.0" prefWidth="1021.0">
+               <children>
+                  <TableView fx:id="TableEmployee" editable="true" prefHeight="175.0" prefWidth="1017.0" stylesheets="@../styls/tableView.css">
+                    <columns>
+                        <TableColumn fx:id="colEmpId" prefWidth="69.33332824707031" text="EmpId:" />
+                        <TableColumn fx:id="colEmpImg" prefWidth="56.33332824707031" text="Employe" />
+                      <TableColumn fx:id="colEmpName" prefWidth="110.0" text="Name" />
+                        <TableColumn fx:id="colEmpAddress" prefWidth="115.0" text="Address" />
+                        <TableColumn fx:id="colEmpNic" prefWidth="126.0" text="NIC" />
+                        <TableColumn fx:id="colEmpContactNumer" prefWidth="125.0" text="Contact Number" />
+                        <TableColumn fx:id="colEmpJobRole" prefWidth="124.33331298828125" text="JOB Role" />
+                        <TableColumn fx:id="colEmpStatus" prefWidth="88.0" text="Status" />
+                        <TableColumn fx:id="colEmpsalary" prefWidth="85.0" text="salary" />
+                        <TableColumn fx:id="colEmpAction" prefWidth="115.0" text="Action" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" layoutX="809.0" layoutY="10.0" onAction="#AddNewEmployeeOnAction" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: rgba(6, 45, 182, 1); -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css" text="+ Add New Employee" textFill="#c0f5ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="44.0" layoutY="346.0" prefHeight="407.0" prefWidth="317.0" style="-fx-background-radius: 30; -fx-background-color: #b7cbd7e8;" styleClass="shadow" stylesheets="@../styls/styls.css">
+         <children>
+            <Label layoutX="44.0" layoutY="37.0" opacity="0.23" text="Duties">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="33.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Duties">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Pane layoutX="8.0" layoutY="89.0" prefHeight="70.0" prefWidth="302.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Circle fill="#131517" layoutX="20.0" layoutY="31.0" opacity="0.31" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="19.0" layoutY="27.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="41.0" layoutY="13.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Standard">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emplcountLbl" layoutX="250.0" layoutY="18.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="28" textFill="#00429e">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="44.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="6.00am to 12.00pm" textFill="#837a7a">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="6.0" layoutY="169.0" prefHeight="70.0" prefWidth="302.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Label layoutX="41.0" layoutY="9.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Night">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#127961" layoutX="18.0" layoutY="27.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="lblNight" layoutX="250.0" layoutY="15.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="5" textFill="#00429e">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="40.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="6.00pm to 12.00am" textFill="#837a7a">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="273.0" prefHeight="119.0" prefWidth="302.0" style="-fx-background-color: #b5143f94; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Label layoutX="101.0" layoutY="9.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Hotline">
+                     <font>
+                        <Font name="Times New Roman Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="49.0" prefHeight="38.0" prefWidth="210.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="0552266088" textFill="#132170">
+                     <font>
+                        <Font name="Times New Roman Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="404.0" layoutY="346.0" prefHeight="407.0" prefWidth="317.0" style="-fx-background-radius: 30; -fx-background-color: #b7cbd7e8;" styleClass="shadow" stylesheets="@../styls/styls.css">
+         <children>
+            <Label layoutX="53.0" layoutY="36.0" opacity="0.23" text="Schedule">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="32.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Schedule">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Pane layoutX="6.0" layoutY="86.0" prefHeight="305.0" prefWidth="302.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <Label layoutX="11.0" layoutY="23.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Morning Shift">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="24.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="6.00pm-12.00pm" textFill="#009c29">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="83.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Day Shift">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="148.0" layoutY="84.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="12.00pm-10.00pm" textFill="#009c29">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="143.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Night Shift">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="144.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="12.00am-5.00am" textFill="#009c29">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="233.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="40 h " textFill="#f80a0a">
+                     <font>
+                        <Font name="Times New Roman Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="51.0" layoutY="272.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Working Hours" textFill="#0a3b7c">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="756.0" layoutY="569.0" prefHeight="184.0" prefWidth="325.0" style="-fx-background-radius: 30; -fx-background-color: #b7cbd7e8;" styleClass="shadow" stylesheets="@../styls/styls.css">
+         <children>
+            <Label layoutX="29.0" layoutY="18.0" opacity="0.22" text="DATE">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="14.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="DATE">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="datelbl" layoutX="20.0" layoutY="42.0" prefHeight="60.0" prefWidth="210.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="2023-05-06" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="98.0" opacity="0.22" text="TIME">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="94.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="TIME">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="timelbl" layoutX="20.0" layoutY="122.0" prefHeight="60.0" prefWidth="210.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="00.00.00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="150.0" layoutX="257.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/TIME.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="150.0" layoutX="257.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/DATE.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="748.0" layoutY="346.0" prefHeight="184.0" prefWidth="325.0" style="-fx-background-radius: 30; -fx-background-color: #b7cbd7e8;" styleClass="shadow" stylesheets="@../styls/styls.css">
+         <children>
+            <Label layoutX="39.0" layoutY="4.0" prefHeight="31.0" prefWidth="196.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="All Employees">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="37.0" layoutX="280.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/front1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnattndnce" buttonType="RAISED" layoutX="260.0" layoutY="43.0" onAction="#btnattndnceOnAction" prefHeight="98.0" prefWidth="61.0" style="-fx-background-radius: 50;" styleClass="shadow" stylesheets="@../styls/styls.css" text=" ">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="32.0" layoutY="46.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="90.50%" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="9.0" opacity="0.22" prefHeight="31.0" prefWidth="210.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="All Employees">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="128.0" opacity="0.67" styleClass="shadow" stylesheets="@../styls/styls.css" text="Attendance % YTD">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

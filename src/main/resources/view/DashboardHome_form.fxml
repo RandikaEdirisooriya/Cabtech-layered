@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="769.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.DashboardHomeFormController">
+   <children>
+      <AnchorPane fx:id="dashBoardAnchorPane" prefHeight="778.0" prefWidth="1389.0">
+         <children>
+            <Pane layoutX="36.0" layoutY="575.0" prefHeight="164.0" prefWidth="492.0" style="-fx-background-color: rgba(165, 182, 239, 1); -fx-background-radius: 30;">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="90.0" layoutX="14.0" layoutY="29.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/profil%20avttranc.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="113.0" fitWidth="90.0" layoutX="7.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/profil%20avttranc.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#07e4a6" layoutX="75.0" layoutY="85.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <TextField layoutX="93.0" layoutY="33.0" prefHeight="57.0" prefWidth="306.0" promptText="Add your comment" style="-fx-background-radius: 30;">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <Pane layoutX="411.0" prefHeight="164.0" prefWidth="84.0" style="-fx-background-color: rgba(57, 81, 165, 1); -fx-background-radius: 30;">
+                     <children>
+                        <Text fill="WHITE" layoutX="2.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 270;" text="Post Now">
+                           <font>
+                              <Font name="System Bold Italic" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <TextField layoutX="26.0" layoutY="206.0" prefHeight="45.0" prefWidth="411.0" promptText="Search for your contacts..." style="-fx-background-radius: 30;">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <Circle fill="#3951a5" layoutX="420.0" layoutY="228.0" radius="24.0" stroke="#2893d0" strokeLineJoin="ROUND" strokeType="INSIDE" />
+            <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="405.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/search.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="33.0" layoutY="277.0" prefHeight="220.0" prefWidth="528.0">
+               <children>
+                  <Pane layoutX="-5.0" layoutY="-4.0" prefHeight="234.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: rgba(57, 81, 165, 1);">
+                     <children>
+                        <Text fill="WHITE" layoutX="31.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total viewer">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="19.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="76,467">
+                           <font>
+                              <Font name="Times New Roman Bold" size="49.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="24.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month Economy">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="22.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5000k">
+                           <font>
+                              <Font name="Times New Roman Bold" size="49.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="242.0" fitWidth="334.0" layoutX="158.0" layoutY="-8.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/graph1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="543.0" layoutY="89.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: rgba(165, 182, 239, 1);">
+               <children>
+                  <ImageView fitHeight="160.0" fitWidth="168.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/car%20image2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#061422" layoutX="29.0" layoutY="179.0" opacity="0.22" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for car">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#061422" layoutX="27.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for car">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutY="-4.0" prefHeight="166.0" prefWidth="180.0" text=" ">
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-0.1839080459770115" radius="0.5114942528735632">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8600000143051147" green="0.2752000093460083" blue="0.2752000093460083" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.2924000024795532" green="0.5951200127601624" blue="0.8600000143051147" opacity="0.6068702340126038" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color opacity="0.7862595319747925" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="543.0" layoutY="329.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: rgba(165, 182, 239, 1);">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="176.0" layoutX="1.0" layoutY="19.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/bike%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="160.0" fitWidth="176.0" layoutX="11.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXButton layoutX="-7.0" prefHeight="200.0" prefWidth="200.0" text=" ">
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-0.1839080459770115" radius="0.5114942528735632">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8600000143051147" green="0.2752000093460083" blue="0.2752000093460083" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.2924000024795532" green="0.5951200127601624" blue="0.8600000143051147" opacity="0.6335877776145935" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color opacity="0.7900763154029846" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </JFXButton>
+                  <Text fill="#061422" layoutX="27.0" layoutY="179.0" opacity="0.22" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for Bike">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#061422" layoutX="25.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for Bike">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="543.0" layoutY="579.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: rgba(165, 182, 239, 1);">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="176.0" layoutX="3.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/van.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutY="-3.0" prefHeight="200.0" prefWidth="186.0" text=" ">
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-0.1839080459770115" radius="0.5114942528735632">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8600000143051147" green="0.2752000093460083" blue="0.2752000093460083" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.2924000024795532" green="0.5951200127601624" blue="0.8600000143051147" opacity="0.6679389476776123" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color opacity="0.6603053212165833" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </JFXButton>
+                  <Text fill="#061422" layoutX="26.0" layoutY="172.0" opacity="0.22" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for van">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#061422" layoutX="24.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New package for van">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="#00000036" fontSmoothingType="LCD" layoutX="156.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back!">
+               <font>
+                  <Font name="Times New Roman Bold" size="58.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="151.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back!">
+               <font>
+                  <Font name="Times New Roman Bold" size="58.0" />
+               </font>
+            </Text>
+            <AnchorPane focusTraversable="true" layoutX="760.0" layoutY="10.0" prefHeight="768.0" prefWidth="335.0" style="-fx-background-radius: 40; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="360.0" fitWidth="316.0" layoutX="8.0" layoutY="19.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/ceo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="149.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/crown.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="55.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="95.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="138.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="182.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="228.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="268.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/star.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#fff2f2" layoutX="130.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023/08/011">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="119.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Ceo Aword">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="14.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/avt2.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#07e4a6" layoutX="93.0" layoutY="480.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <JFXButton layoutX="282.0" layoutY="443.0" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: rgba(57, 81, 165, 1); -fx-background-radius: 20;" text="Add" textFill="#fffdfd" />
+                  <Text layoutX="109.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Manager" wrappingWidth="145.5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="114.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="144.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kandy">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="14.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="14.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/avt4.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#e30909" layoutX="93.0" layoutY="590.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <JFXButton layoutX="282.0" layoutY="555.0" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: rgba(57, 81, 165, 1); -fx-background-radius: 20;" text="Add" textFill="#fffdfd" />
+                  <Text layoutX="109.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Analyst" wrappingWidth="145.5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="144.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colombo">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="114.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/location.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="14.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/avt5.jpg" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#07e4a6" layoutX="93.0" layoutY="708.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <JFXButton layoutX="282.0" layoutY="671.0" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: rgba(57, 81, 165, 1); -fx-background-radius: 20;" text="Add" textFill="#fffdfd" />
+                  <Text layoutX="109.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Manager" wrappingWidth="145.5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="114.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="144.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panadura">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="142.0" fitWidth="130.0" layoutX="35.0" layoutY="34.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/profil%20avttranc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="142.0" fitWidth="130.0" layoutX="26.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Asset/profil%20avttranc.png" />
+               </image>
+            </ImageView>
+            <Text fontSmoothingType="LCD" layoutX="151.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi Randika,">
+               <font>
+                  <Font name="Times New Roman Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="160.0" layoutY="82.0" opacity="0.27" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi Randika,">
+               <font>
+                  <Font name="Times New Roman Bold" size="35.0" />
+               </font>
+            </Text>
+            <Circle fill="#07e4a6" layoutX="127.0" layoutY="122.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fontSmoothingType="LCD" layoutX="552.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Posts,">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="555.0" layoutY="57.0" opacity="0.27" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Posts,">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

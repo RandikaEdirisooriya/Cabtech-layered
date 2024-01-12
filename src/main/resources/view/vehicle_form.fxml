@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vehicleAnchor" prefHeight="773.0" prefWidth="1084.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CABTEACK.Controller.VehicleFormController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-8.0" prefHeight="778.0" prefWidth="1084.0">
+         <children>
+            <ImageView fitHeight="781.0" fitWidth="1254.0" layoutX="-168.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Asset/Rectangle%20168.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="22.0" layoutY="110.0" prefHeight="562.0" prefWidth="306.0" style="-fx-background-color: black; -fx-background-radius: 40;" styleClass="button" stylesheets="@../styls/buttonShine.css">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="40.0" layoutY="29.0" pickOnBounds="true" style="-fx-rotate: 90;">
+                     <image>
+                        <Image url="@../Asset/vehi2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="220.0" fitWidth="268.0" layoutX="4.0" layoutY="125.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/vehi3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="46.0" layoutY="46.0" opacity="0.4" prefHeight="54.0" prefWidth="134.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Cars" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="40.0" prefHeight="54.0" prefWidth="134.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Cars" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="370.0" text="Battery Electic Vehicle" textFill="#fffafa">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="carsButton" layoutX="123.0" layoutY="464.0" onAction="#carsButtonOnAction" prefHeight="49.0" prefWidth="126.0" style="-fx-background-color: #393737; -fx-background-radius: 30;" stylesheets="@../styls/buttonShine.css" text="More" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="223.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/more.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="358.0" layoutY="110.0" prefHeight="562.0" prefWidth="272.0" style="-fx-background-color: black; -fx-background-radius: 40;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="29.0" layoutY="33.0" pickOnBounds="true" style="-fx-rotate: 90;">
+                     <image>
+                        <Image url="@../Asset/vehi2.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="30.0" layoutY="119.0" prefHeight="47.0" prefWidth="58.0" style="-fx-background-color: black;" />
+                  <ImageView fitHeight="140.0" fitWidth="189.0" layoutX="93.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/Rectangle%20487.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="159.0" fitWidth="340.0" layoutX="-32.0" layoutY="136.0" pickOnBounds="true" smooth="false" style="-fx-rotate: 0;">
+                     <image>
+                        <Image url="@../Asset/threeWheel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="268.0" layoutX="48.0" layoutY="297.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/vehi5.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="29.0" layoutY="47.0" opacity="0.12" prefHeight="54.0" prefWidth="288.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Three wheels" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="41.0" prefHeight="54.0" prefWidth="288.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Three wheels" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="371.0" text="Battery Electic Vehicle" textFill="#fffafa">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="ThreeWheelButton" layoutX="142.0" layoutY="463.0" onAction="#ThreeWheelButtonOnAction" prefHeight="49.0" prefWidth="126.0" style="-fx-background-color: #393737; -fx-background-radius: 30;" stylesheets="@../styls/buttonShine.css" text="More" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="242.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/more.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="702.0" layoutY="110.0" prefHeight="562.0" prefWidth="300.0" style="-fx-background-color: black; -fx-background-radius: 40;" styleClass="shadow" stylesheets="@../styls/styls.css">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="189.0" layoutX="79.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/Rectangle%20487.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="29.0" layoutY="39.0" pickOnBounds="true" style="-fx-rotate: 90;">
+                     <image>
+                        <Image url="@../Asset/vehi2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="268.0" layoutX="11.0" layoutY="299.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/vehi5.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="159.0" fitWidth="309.0" layoutX="-33.0" layoutY="130.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Asset/bike1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="58.0" layoutY="50.0" opacity="0.14" prefHeight="54.0" prefWidth="134.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Bikes" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="45.0" prefHeight="54.0" prefWidth="134.0" styleClass="shadow" stylesheets="@../styls/styls.css" text="Bikes" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="373.0" text="Battery Electic Vehicle" textFill="#fffafa">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="BikeButton" layoutX="152.0" layoutY="456.0" onAction="#BikeButtonOnAction" prefHeight="49.0" prefWidth="126.0" style="-fx-background-color: #393737; -fx-background-radius: 30;" stylesheets="@../styls/buttonShine.css" text="More" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="252.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Asset/more.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
